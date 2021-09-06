@@ -12,6 +12,12 @@
               analytics.page();
               }}();
          </script>
+        <script>
+            var signup_button = document.getElementsByClassName("btn btn-primary")[0];
+            signup_button.addEventListener("click", function() {
+            analytics.track("signup button clicked")
+            });
+        </script>
     </head>
     <body>
         <div class="text-center">
