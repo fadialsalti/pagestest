@@ -6,13 +6,7 @@
   analytics.load("32eoGKvr6aRJ5Yzjp04Tz1mnkkwcqWhq");
   analytics.page();
   }}();
-        <script>
-        function Click() {
-        analytics.track('Clicks', {
-              location: 'body',
-              type: 'button'
-              })};    
-        </script>
+
 </script>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -28,5 +22,13 @@
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <script>
+            $('#myCTA').click(function(){
+                analytics.track('Clicked CTA', {
+                  location: 'hero',
+                  type: 'button'
+                });
+            });
+        </script>
     </body>
 </html>
