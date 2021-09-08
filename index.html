@@ -13,19 +13,20 @@
               }}();
          </script>
         <script>
-                document.getElementById("Sign-up").addEventListener("click", function() {
-                analytics.track('Sign-up Clicked', {
-                type: 'DOM button'
-                });
-                console.log("Sign-up Element Clicked");
-                });
-         </script>
+document.getElementById("addToCart").addEventListener("click", function() {
+  analytics.track('DOM AddToCart Clicked', {
+    type: 'DOM button'
+  });
+  console.log("AddToCart DOM Element Clicked");
+  });
+</script>
     </head>
     <body>
         <div class="text-center">
             <h1>Hello World</h1>
             <p> Just a sample page with sample text and a sample CTA. Click and nothing will happen.</p>
             <a type="button" id="Sign-up" class="btn btn-primary">Signup now</a>
+            <input type="button" id="addToCart" value="AddToCart(DOM)">
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
