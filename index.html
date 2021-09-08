@@ -11,6 +11,10 @@
               analytics.load("32eoGKvr6aRJ5Yzjp04Tz1mnkkwcqWhq");
               analytics.page();
               }}();
+              var link = document.getElementById('Sign-up');
+              analytics.trackLink(link, 'Clicked Free-Trial Link', {
+              plan: 'Enterprise'
+              });
          </script>
         
     </head>
@@ -18,7 +22,7 @@
         <div class="text-center">
             <h1>Hello World</h1>
             <p> Just a sample page with sample text and a sample CTA. Click and nothing will happen.</p>
-            <a type="button" id="Sign-up" class="btn btn-primary">Signup now</a>
+            <a id="Sign-up" class="btn btn-primary">Signup now</a>
         </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
