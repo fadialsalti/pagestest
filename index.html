@@ -13,10 +13,10 @@
               }}();
          </script>
         <script>
-            var signup_button = document.getElementsByClassName("btn btn-primary")[0];
-            signup_button.addEventListener("click", function() {
-            analytics.track("signup button clicked")
-            });
+            var link = document.getElementById('Sign-up');
+            analytics.trackLink(link, 'Clicked Sign-up', {
+            plan: 'Enterprise'
+            })
         </script>
     </head>
     <body>
